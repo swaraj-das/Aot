@@ -1,0 +1,730 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #000000;
+}
+
+.sec-1,
+.sec-2,
+.sec-3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sec-1 {
+    background-image: url(bg_home.jpg);
+    min-height: 100%;
+}
+
+.sec-2 {
+    background-image: url(campus.jpg);
+    min-height: 100%;
+}
+
+.sec-3 {
+    background-image: url(d-block.jpg);
+    min-height: 80%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px;
+  
+}
+
+.about .written {
+   max-width: 650px;
+}
+
+.about .ytvideo {
+    width: calc(50% - 15px);
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 700px;
+    height: 60px;
+    width: 600px;
+}
+
+.about h3 {
+    text-align: left;
+    background-color: rgb(255, 205, 41);
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+#msg {
+    text-align: justify;
+}
+
+
+#msg {
+    text-align: justify;
+}
+
+.read-more{
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 95);
+    color: rgb(255, 205, 41);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    margin-top: 650px;
+    left: 550px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.read-more:hover{
+    transition: ease-in-out 0.4s;
+    background-color: rgba(255, 205, 41);
+    color: rgb(12, 5, 105);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 72px;
+    z-index: 1000;
+    /* Ensure the navbar stays on top of other content */
+    background-color: rgb(170, 170, 170);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar h1 {
+    text-align: start;
+    font-size: 22px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+ 
+    font-weight: 1500;
+    color: rgb(0, 0, 95);
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns with equal width */
+    grid-template-rows: auto auto;
+    /* Auto size rows */
+    gap: 10px;
+    /* Gap between grid items */
+    margin-right: 5px;
+}
+
+.navbar ul li {
+    text-align: center;
+    /* Center align the list items */
+}
+
+.navbar ul li a {
+    color: rgb(8, 0, 124);
+    /* Text color for the links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navbar .butn {
+    background-color: rgb(255, 255, 255);
+    /* Button background color */
+    color:rgb(6, 28, 158);
+    /* Button text color */
+    border: black 1.5px solid;
+    /* Remove button border */
+    padding: 3px 5px;
+    /* Adjust padding as needed */
+    border-radius: 30px;
+    font-size: 13px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    cursor: pointer;
+    /* Add pointer cursor on hover */
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 30px;
+}
+
+.navbar .butn:hover {
+    background-color: rgba(6, 28, 158,0.8);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    height: 30px;
+    width: 96px;
+    top: 0;
+    left: 0px;
+    margin-right: 710px;
+}
+
+.navbar img {
+    height: 82px;
+    border-radius: 5px;
+}
+
+.nav-bg {
+    max-width: 100%;
+}
+
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-content h1 {
+    margin: 0;
+}
+
+.tagline {
+    color: #111111;
+    font-size: 12px;
+    position: relative;
+    left: 42%;
+}
+
+.address {
+    color: #242424;
+    font-size: 14px;
+    white-space: pre-line; /* Allow line breaks */
+    margin-right: 5px;
+    margin-left: 10px;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: 550;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-container {
+   position: absolute;
+   margin-right: 508px;
+  }
+  
+  .search-input {
+    height: 35px;
+    width: 230px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    font-size: 16px;
+    outline: none;
+    text-indent: 10;
+  }
+
+  .search-input::placeholder {
+    /* Adjust the value below to create the desired gap */
+    text-indent: 10px;
+  }
+  
+  
+  .search-button {
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    height: 100%;
+    width: 36px; /* Adjust width as needed */
+    border: none;
+    border-radius: 0; /* Adjust border radius to match the input */
+    background-color: rgb(2, 22, 134);
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+
+  }
+  
+
+.notices {
+    position: absolute;
+    top: 10%;
+    right: 0.5%;
+    width: 250px;
+    height: 450px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: rgba(228, 228, 228, 0.9);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 20px; /* Adjust margin as needed */
+    border-radius: 5px;
+    margin-top: 38px;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.imp-notice h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 0;
+    background-color: rgb(255, 205, 41);
+}
+
+.notices li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pictures img{
+    height: 350px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+
+.slider-container img{
+    width: 300px;
+    height: 350px;
+  
+
+}
+
+.slider-container {
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  
+
+
+
+
+
+.location-gmap{
+
+ margin-top: 200px;
+ margin-right: 30px;
+}
+
+.sec-2 {
+    display: flex;
+    justify-content: left; /* Aligns the content to the left */
+    margin-top: 50px; /* Adds some space at the top */
+  }
+
+  .sec-2 a{
+    text-decoration: none;
+  }
+
+
+    .sec-2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 columns */
+        grid-gap: 10px; /* Gap between grid items */
+    }
+
+.sec-3{
+    margin: 15px;
+}  
+
+.sec-3 h3{
+    margin-left: 565px;
+    margin-top: 50px;
+    background-color: rgb(255, 205, 41);
+    padding: 8px 0;
+    padding-left: 12px;
+    width: 694px;
+}
+
+.sec-3 p{
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    line-height: 1.7rem;
+}    
+
+.sec-3 iframe{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}  
+  
+  .box-module {
+    flex: 1; /* Takes up available space */
+    max-width: 340px; /* Adjust as needed */
+    margin-left: 10px; /* Adds space between the box-module and the background */
+    margin-top: 10px; /* Adds margin between the box-module and the background image */
+    display: flex; /* Use flexbox */
+    margin-right: 10px;
+    max-width: calc(100% - 20px); /* Adjusted width for grid layout */
+  }
+  
+  .box {
+    flex: 1; /* Take up available space within the box-module */
+    background-color: rgba(247, 247, 247, 0.9);
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange content vertically */
+    height: 250px; /* Set a fixed height */
+  }
+
+  .talent{
+    position: absolute;
+    background-color: rgba(247, 247, 247, 0.9);
+    border: 1px solid #ddd;
+    padding: 12px;
+    height: 480px;
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 10px;
+    right: 10px;
+    line-height: 1.5rem;
+  }
+
+  .talent img{
+    max-width: 100%;
+    min-height: 180px;
+  }
+
+  .talent h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talent p{
+    text-align: justify;
+  }
+  
+  .talent a,h2{
+    text-decoration: none;
+    color: #222222;
+  }
+
+  .box-module .box img {
+    max-width: 100%;
+    min-height: 70px;
+  }
+  
+  .box h2 {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .box p {
+    color: #222222;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+.box-module:nth-child(7),.box-module:nth-child(6) ,.box-module:nth-child(5),.box-module:nth-child(8)  {
+    grid-row: 2; /* Place the MCA box in the second row */
+}
+
+footer {
+    background-color: rgb(12, 5, 51);
+    height: 420px;
+    position: relative;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials a {
+    text-decoration: none; /* Remove default link decoration */
+    margin-left: 26px;
+    margin-top: 14px;
+}
+
+.socials img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; /* Make the images circular */
+}
+
+.vertical-line {
+    border-left: 1px dashed rgba(180, 180, 180,0.6);
+    height: 330px;
+    position: absolute;
+    top: 24px;
+    bottom: 20px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.pic img{
+    height: 60px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.addres h3{
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    margin-left: 140px;
+    font-size: 26px;
+}
+
+.addres p{
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    margin-left: 140px;
+    font-size: 15px;
+}
+
+.quick-links{
+    position: absolute;
+    top: 20px;
+    right: 360px;
+    color: #f7f7f7;
+    font-size: 15px;
+}
+
+.quick-links h3{
+    margin-left: 120px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffee00;
+}
+
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 15px;
+    text-align: center;
+}
+
+.quick-links li a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.quick-links li a:hover {
+    color: #ffee00;
+    text-decoration: underline;
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.contact span {
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact a:hover {
+    color: #007bff;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.vertical-line-2 {
+    border-left: 1px dashed rgba(180, 180, 180,0.6);
+    height: 330px;
+    position: absolute;
+    top: 24px;
+    bottom: 20px;
+    right: 36%;
+    transform: translateX(-50%);
+}
+
+/* Style for the container */
+.imp-links {
+    position: absolute;
+    top: 5px;
+    right: 280px;
+    text-align: center;
+}
+
+/* Style for the heading */
+.imp-links h3 {
+    margin: 22px ; /* Center the heading horizontally and add margin on top */
+    font-size: 18px;
+    color: #ffee00;
+}
+
+/* Style for the list items */
+.imp-links li {
+    list-style-type: none;
+    margin-top: 3px;
+}
+
+/* Style for the links */
+.imp-links a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Hover effect for links */
+.imp-links a:hover {
+    color: #ffee00;
+    text-decoration: underline;
+}
+
+.help {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    text-align: center;
+}
+
+/* Style for the heading */
+.help h3 {
+    margin: 22px ; /* Center the heading horizontally and add margin on top */
+    font-size: 16px;
+    color: #ffee00;
+}
+
+/* Style for the list items */
+.help li {
+    list-style-type: none;
+    margin-top: 3px;
+}
+
+/* Style for the links */
+.help a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Hover effect for links */
+.help a:hover {
+    color: #ffee00;
+    text-decoration: underline;
+}
+
+
+
+.legal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 80px;
+    left: 28px;
+    font-size: 13px;
+}
+
+.legal a {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    color: #ffffff;
+}
+
+/* Centering the copyright text */
+.copyright {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #b6b6b6;
+}
+
+
+
+
+
+/* ---------------------------------------------Responsiveness---------------------------------------------------------- */
+
+  /* For screens smaller than 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    /* Adjust styles here */
+    .navbar {
+        /* Example adjustment */
+        padding: 5px;
+    }
+    .navbar ul {
+        /* Example adjustment */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Add more adjustments as needed */
+}
+
+/* For screens smaller than 480px (e.g., smartphones) */
+@media (max-width: 480px) {
+    /* Adjust styles here */
+    .navbar {
+        /* Example adjustment */
+        padding: 2px;
+    }
+    .navbar ul {
+        /* Example adjustment */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Add more adjustments as needed */
+}
