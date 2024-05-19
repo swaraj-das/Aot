@@ -1,1012 +1,393 @@
-html,
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: #000000;
-}
-
-.sec-1,
-.sec-2,
-.sec-3,
-.backgr {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.sec-1 {
-  background-image: url(bg_home.jpg);
-  min-height: 100%;
-}
-
-.sec-2 {
-  background-image: url(campus.jpg);
-  min-height: 100%;
-}
-
-.sec-3 {
-  min-height: 50%;
-}
-
-.backgr {
-  background-image: url(a.jpg);
-  min-height: 70%;
-}
-
-.about {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 90px;
-}
-
-.about .written {
-  max-width: 650px;
-}
-
-.about .ytvideo {
-  width: calc(50% - 15px);
-  display: flex;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 700px;
-  height: 60px;
-  width: 600px;
-}
-
-.about h3 {
-  background-color: rgb(255, 205, 41);
-  padding: 8px 0;
-  padding-left: 12px;
-  width: 650px;
-}
-
-#msg {
-  text-align: justify;
-}
-
-#msg {
-  text-align: justify;
-}
-
-.read-more {
-  height: 50px;
-  width: 120px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: rgb(0, 0, 95);
-  color: rgb(255, 205, 41);
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 690px;
-  position: absolute;
-  left: 550px;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-.read-more:hover {
-  transition: ease-in-out 0.4s;
-  background-color: rgba(255, 205, 41);
-  color: rgb(12, 5, 105);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-height: 72px;
-  z-index: 1000;
-  /* Ensure the navbar stays on top of other content */
-  background-color: rgb(170, 170, 170);
-  padding: 5px 10px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 14px;
-}
-
-.navbar h1 {
-  text-align: start;
-  font-size: 22px;
-  display: flex;
-  font-family: "Times New Roman", Times, serif;
-
-  font-weight: 1500;
-  color: rgb(0, 0, 95);
-}
-
-.navbar ul {
-  list-style-type: none;
-  /* Remove bullet points */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* 4 columns with equal width */
-  grid-template-rows: auto auto;
-  /* Auto size rows */
-  gap: 10px;
-  /* Gap between grid items */
-  margin-right: 5px;
-}
-
-.navbar ul li {
-  text-align: center;
-  /* Center align the list items */
-}
-
-.navbar ul li a {
-  color: rgb(8, 0, 124);
-  /* Text color for the links */
-  text-decoration: none;
-  /* Remove underline */
-  font-weight: bold;
-}
-
-.navbar ul li a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.navbar .butn {
-  background-color: rgb(255, 255, 255);
-  /* Button background color */
-  color: rgb(6, 28, 158);
-  /* Button text color */
-  border: black 1.5px solid;
-  /* Remove button border */
-  padding: 3px 5px;
-  /* Adjust padding as needed */
-  border-radius: 30px;
-  font-size: 13px;
-  /* Adjust font size as needed */
-  font-weight: bold;
-  cursor: pointer;
-  /* Add pointer cursor on hover */
-  text-align: center;
-  margin-top: 5px;
-  margin-right: 30px;
-}
-
-.navbar .butn:hover {
-  background-color: rgba(6, 28, 158, 0.8);
-  color: rgb(255, 255, 255);
-}
-
-.logo {
-  height: 30px;
-  width: 96px;
-  top: 0;
-  left: 0px;
-  margin-right: 710px;
-}
-
-.navbar img {
-  height: 72px;
-  border-radius: 5px;
-}
-
-.nav-bg {
-  max-width: 100%;
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 120px;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-content h1 {
-  margin: 0;
-}
-
-.tagline {
-  color: #111111;
-  font-size: 12px;
-  position: relative;
-  left: 42%;
-}
-
-.address {
-  color: #242424;
-  font-size: 14px;
-  white-space: pre-line; /* Allow line breaks */
-  margin-right: 5px;
-  margin-left: 8px;
-  line-height: 1.4rem;
-  text-align: center;
-  font-weight: 550;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.search-container {
-  position: absolute;
-  margin-right: 508px;
-}
-
-.search-input {
-  height: 35px;
-  width: 230px;
-  padding: 0;
-  border: 1px solid #ccc;
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
-  font-size: 16px;
-  outline: none;
-  text-indent: 10;
-}
-
-.search-input::placeholder {
-  /* Adjust the value below to create the desired gap */
-  text-indent: 10px;
-}
-
-.search-button {
-  position: absolute;
-  top: 0%;
-  right: 0px;
-  height: 100%;
-  width: 36px; /* Adjust width as needed */
-  border: none;
-  border-radius: 0; /* Adjust border radius to match the input */
-  background-color: rgb(2, 22, 134);
-  cursor: pointer;
-  font-size: 20px;
-  color: #fff;
-}
-
-.notices {
-  position: absolute;
-  top: 14%;
-  right: 3%;
-  width: 280px;
-  height: 450px; /* Adjust width as needed */
-  padding: 20px;
-  background-color: rgba(228, 228, 228, 0.9);
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  margin: 20px; /* Adjust margin as needed */
-  border-radius: 5px;
-  margin-top: 38px;
-}
-
-.scroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: justify;
-}
-
-.imp-notice h2 {
-  font-size: 20px;
-  text-align: center;
-  margin-left: 30px;
-  margin-top: 0;
-  background-color: rgb(255, 205, 41);
-}
-
-.notices li {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.pictures img {
-  height: 350px;
-  width: 300px;
-  margin-top: 100px;
-}
-
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Adjust as needed */
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: 100px;
-  margin-left: 100px;
-  cursor: pointer;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slides img {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-}
-
-.arrows {
-  position: absolute;
-  top: 65%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.arrow {
-  font-size: 24px;
-  color: white;
-  background-color: rgba(32, 32, 32, 0.5);
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  min-height: 20px;
-}
-
-.dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.active {
-  background-color: #333;
-}
-
-:root {
-  --angle: 45deg;
-  --opacity: 0.5;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.rainbow {
-  width: 320px;
-  height: 150px;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: auto;
-  position: absolute;
-  margin-top: 60px;
-  margin-left: 580px;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  --border-size: 0.3rem;
-  border: var(--border-size) solid transparent;
-
-  /* Paint an image in the border */
-  border-image: conic-gradient(
-      from var(--angle),
-      #d53e33 0deg 90deg,
-      #fbb300 90deg 180deg,
-      #377af5 180deg 270deg,
-      #399953 270deg 360deg
-    )
-    1 stretch;
-  background: rgb(255 255 255 / var(--opacity));
-}
-
-/* Animate when Houdini is available */
-@supports (background: paint(houdini)) {
-  @property --opacity {
-    syntax: "<number>";
-    initial-value: 0.5;
-    inherits: false;
-  }
-
-  @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
-
-  @keyframes opacityChange {
-    to {
-      --opacity: 1;
-    }
-  }
-
-  @keyframes rotate {
-    to {
-      --angle: 360deg;
-    }
-  }
-
-  .rainbow {
-    animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
-    font-weight: 800;
-  }
-}
-
-.eqry {
-  height: 40px;
-  width: 120px;
-  background-color: #058a28;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* New box shadow */
-  border: none;
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 25px;
-  cursor: pointer;
-}
-
-.eqry:hover {
-  background-color: #2ba74c;
-  color: rgb(44, 44, 44);
-  border: black solid 0.5px;
-}
-
-.research-box {
-  width: 450px;
-  height: 190px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  transition: width 0.5s ease-in-out;
-  cursor: pointer; /* Add cursor style to indicate it's clickable */
-  margin-top: 50px;
-  margin-left: 90px;
-}
-
-.research-box h2 {
-  font-size: 1.5em;
-  margin-top: 0;
-  color: #fded04;
-  font-weight: bold;
-}
-
-.research-box p {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.research-box p {
-  animation: slideIn 0.5s ease-in-out; /* Apply animation */
-}
-
-.location-gmap {
-  margin-top: 200px;
-  margin-right: 30px;
-}
-
-.sec-2 {
-  display: flex;
-  justify-content: left; /* Aligns the content to the left */
-  margin-top: 50px; /* Adds some space at the top */
-}
-
-.sec-2 a {
-  text-decoration: none;
-}
-
-.sec-2 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 columns */
-  grid-gap: 10px; /* Gap between grid items */
-}
-
-.box-module {
-  flex: 1; /* Takes up available space */
-  max-width: 340px; /* Adjust as needed */
-  margin-left: 24px; /* Adds space between the box-module and the background */
-  margin-top: 20px; /* Adds margin between the box-module and the background image */
-  display: flex; /* Use flexbox */
-  margin-right: 10px;
-  max-width: calc(100% - 20px); /* Adjusted width for grid layout */
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
-}
-
-.box-module:hover {
-  transform: scale(1); /* Grow the box when hovered over */
-}
-
-.box {
-  flex: 1; /* Take up available space within the box-module */
-  background-color: rgba(247, 247, 247, 0.9);
-  border: 1px solid #ddd;
-  padding: 10px;
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Arrange content vertically */
-  height: 200px; /* Set a fixed height */
-  margin-bottom: 25px;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
-}
-
-.box:hover {
-  transform: scale(1.1); /* Grow the box when hovered over */
-}
-
-.talent {
-  position: absolute;
-  background-color: rgba(247, 247, 247, 0.9);
-  border: 1px solid #ddd;
-  padding: 12px;
-  height: 420px;
-  width: 360px;
-  margin-top: 30px;
-  margin-right: 10px;
-  right: 25px;
-  line-height: 1.5rem;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
-}
-
-.talent:hover {
-  transform: scale(1.09); /* Grow the box when hovered over */
-}
-
-.talent img {
-  max-width: 100%;
-  min-height: 140px;
-}
-
-.talent h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.talent p {
-  text-align: justify;
-  font-size: 14px;
-}
-
-.talent a,
-h2 {
-  text-decoration: none;
-  color: #222222;
-}
-
-.box-module .box img {
-  max-width: 100%;
-  min-height: 84px;
-}
-
-.box h2 {
-  color: #000000;
-  font-size: 16px;
-  text-align: center;
-}
-
-.box-module:nth-child(7),
-.box-module:nth-child(6),
-.box-module:nth-child(5),
-.box-module:nth-child(8) {
-  grid-row: 2; /* Place the MCA box in the second row */
-}
-
-#sec-1 {
-  height: 100%;
-}
-
-.sec-3 {
-  margin: 15px;
-}
-
-.sec-3 h3 {
-  margin-left: 565px;
-  margin-top: 50px;
-  background-color: rgb(255, 205, 41);
-  padding: 8px 0;
-  padding-left: 12px;
-  width: 694px;
-}
-
-.sec-3 p {
-  width: 700px;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  line-height: 1.7rem;
-}
-
-.sec-3 iframe {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-}
-
-/* Container for the form */
-
-/* Container for the form */
-.backgr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/* Contact form styling */
-.contact-form {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-}
-
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #66afe9;
-  outline: none;
-  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
-}
-
-#message-form {
-  margin-top: 20px;
-}
-
-#message-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#message-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  resize: vertical; /* Allows only vertical resizing */
-}
-
-#message-form textarea:focus {
-  border-color: #66afe9;
-  outline: none;
-  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
-}
-
-.butt {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.butt:hover {
-  background-color: #0056b3;
-}
-
-.butt:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-footer {
-  background-color: rgb(12, 5, 51);
-  height: 420px;
-  position: relative;
-}
-
-.socials {
-  display: flex;
-}
-
-.socials a {
-  text-decoration: none; /* Remove default link decoration */
-  margin-left: 26px;
-  margin-top: 14px;
-}
-
-.socials img {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%; /* Make the images circular */
-}
-
-.vertical-line {
-  border-left: 1px dashed rgba(180, 180, 180, 0.6);
-  height: 330px;
-  position: absolute;
-  top: 24px;
-  bottom: 20px;
-  left: 35%;
-  transform: translateX(-50%);
-}
-
-.pic img {
-  height: 60px;
-  width: 100px;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.addres h3 {
-  color: #fff;
-  position: absolute;
-  top: 2px;
-  margin-left: 140px;
-  font-size: 26px;
-}
-
-.addres p {
-  color: #fff;
-  position: absolute;
-  top: 50px;
-  margin-left: 140px;
-  font-size: 15px;
-}
-
-.quick-links {
-  position: absolute;
-  top: 20px;
-  right: 360px;
-  color: #f7f7f7;
-  font-size: 15px;
-}
-
-.quick-links h3 {
-  margin-left: 120px;
-  margin-top: 10px;
-  font-size: 18px;
-  color: #ffee00;
-}
-
-.quick-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 12px;
-  margin-right: 150px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  grid-gap: 15px;
-  text-align: center;
-}
-
-.quick-links li a {
-  color: #d4d4d4;
-  text-decoration: none;
-}
-
-.quick-links li a:hover {
-  color: #ffee00;
-  text-decoration: underline;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-left: 30px;
-}
-
-.contact span {
-  display: flex;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.contact a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.contact a:hover {
-  color: #007bff;
-}
-
-.contact i {
-  margin-right: 10px;
-}
-
-.contact p {
-  margin: 0;
-}
-
-.vertical-line-2 {
-  border-left: 1px dashed rgba(180, 180, 180, 0.6);
-  height: 330px;
-  position: absolute;
-  top: 24px;
-  bottom: 20px;
-  right: 36%;
-  transform: translateX(-50%);
-}
-
-/* Style for the container */
-.imp-links {
-  position: absolute;
-  top: 5px;
-  right: 280px;
-  text-align: center;
-}
-
-/* Style for the heading */
-.imp-links h3 {
-  margin: 22px; /* Center the heading horizontally and add margin on top */
-  font-size: 18px;
-  color: #ffee00;
-}
-
-/* Style for the list items */
-.imp-links li {
-  list-style-type: none;
-  margin-top: 3px;
-}
-
-/* Style for the links */
-.imp-links a {
-  color: #d4d4d4;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* Hover effect for links */
-.imp-links a:hover {
-  color: #ffee00;
-  text-decoration: underline;
-}
-
-.help {
-  position: absolute;
-  top: 5px;
-  right: 40px;
-  text-align: center;
-}
-
-/* Style for the heading */
-.help h3 {
-  margin: 22px; /* Center the heading horizontally and add margin on top */
-  font-size: 16px;
-  color: #ffee00;
-}
-
-/* Style for the list items */
-.help li {
-  list-style-type: none;
-  margin-top: 3px;
-}
-
-/* Style for the links */
-.help a {
-  color: #d4d4d4;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* Hover effect for links */
-.help a:hover {
-  color: #ffee00;
-  text-decoration: underline;
-}
-
-.legal {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  bottom: 80px;
-  left: 28px;
-  font-size: 13px;
-}
-
-.legal a {
-  color: #c5c5c5;
-  text-decoration: none;
-}
-
-.legal a:hover {
-  color: #ffffff;
-}
-
-/* Centering the copyright text */
-.copyright {
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 13px;
-  color: #b6b6b6;
-}
-
-/* ---------------------------------------------Responsiveness---------------------------------------------------------- */
-
-/* For screens smaller than 768px (e.g., tablets and smartphones) */
-@media (max-width: 768px) {
-  /* Adjust styles here */
-  .navbar {
-    /* Example adjustment */
-    padding: 5px;
-  }
-  .navbar ul {
-    /* Example adjustment */
-    grid-template-columns: repeat(2, 1fr);
-  }
-  /* Add more adjustments as needed */
-}
-
-/* For screens smaller than 480px (e.g., smartphones) */
-@media (max-width: 480px) {
-  /* Adjust styles here */
-  .navbar {
-    /* Example adjustment */
-    padding: 2px;
-  }
-  .navbar ul {
-    /* Example adjustment */
-    grid-template-columns: repeat(1, 1fr);
-  }
-  /* Add more adjustments as needed */
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy of Technology</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="home-section" class="sec-1">
+      <section class="sec-1">
+        <div class="nav-bg">
+          <nav class="navbar">
+            <img class="logo" src="logo.jpg" />
+            <div class="nav-content">
+              <div class="header-content">
+                <h1>ACADEMY OF TECHNOLOGY</h1>
+                <div class="tagline">… translate your vision into reality</div>
+              </div>
+              <span class="address"
+                >Aedconagar,Adisaptagram,<br />Hooghly- 712109, West
+                Bengal</span
+              >
+            </div>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <ul>
+              <li><a class="home-link" href="#">Home</a></li>
+              <li><a class="about-link" href="#">About</a></li>
+              <li><a class="course-link" href="#courses">Courses</a></li>
+              <li><a href="#academics">Academics</a></li>
+              <li><a href="#Research">Research</a></li>
+              <li><a href="#faculty">Faculty</a></li>
+              <li><a href="#infrustracture">Infrastructure</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="login.html"
+              ><button class="butn">Login/Sign up</button>
+            </a>
+          </nav>
+        </div>
+
+        <div class="slider">
+          <div class="slides">
+            <img src="slide1.png" alt="Slide 1" />
+            <img src="slide2.png" alt="Slide 2" />
+            <img src="slide3.png" alt="Slide 3" />
+            <img src="slide4.png" alt="Slide 4" />
+          </div>
+          <div class="arrows">
+            <div class="arrow prev">&#10094;</div>
+            <div class="arrow next">&#10095;</div>
+          </div>
+          <div class="dots"></div>
+        </div>
+
+        <div class="notices scroll">
+          <div class="imp-notice">
+            <h2 id="notice-toggle">Important notices</h2>
+            <ul></ul>
+          </div>
+
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              ipsa obcaecati. Consectetur ratione amet aut dolorum,
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Flaborum
+              debitis praesentium, ducimus impedit modi laudantium nulla
+              quibusdam maxime ad?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. hic sint
+              architecto unde soluta! Deleniti.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. hic sint
+              architecto unde soluta! Deleniti.
+            </li>
+          </ul>
+        </div>
+
+        <div class="rainbow">
+          <p>ADMISSION 2024 <button class="eqry">Enquire Now</button></p>
+        </div>
+
+        <div class="research-box">
+          <h2>Research</h2>
+          <p id="research-content">
+            Research is the systematic investigation into and study of materials
+            and sources to establish facts and reach new conclusions. It is
+            essential for advancing knowledge and driving innovation across
+            various fields.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div id="about-section">
+      <section class="about">
+        <div class="written">
+          <h3>About AOT</h3>
+          <p id="msg">
+            Established in 2003, Academy of Technology is one of the most
+            acclaimed self-financed engineering colleges in West Bengal. It has
+            been established by Ananda Educational Development & Charitable
+            Organisation (AEDCO), a trust known for its deep sense of social
+            commitment and dedicated to the promotion of education by
+            inculcating appropriate ethics and attitude. In a metamorphosis of
+            over 18 years, Academy of Technology has been reinventing itself
+            constantly to explore the infinite possibilities of engineering and
+            technology – an academy that inspires everyone to think differently.
+            It is now the preferred career destination for meritorious students
+            due to its academic integrity and standard as well as its attractive
+            campus placement.
+          </p>
+          <h3>Vision</h3>
+          <p id="msg">
+            “Aspires to be a pre-eminent deemed university of national standing
+            in education and innovation”.
+          </p>
+          <h3>Recognition</h3>
+          <p id="msg">
+            All academic programmes are approved by AICTE, recognized by
+            Department of Higher Education, Government of West Bengal and
+            affiliated to Maulana Abul Kalam Azad University of Technology, West
+            Bengal (formerly West Bengal University of Technology) .
+          </p>
+        </div>
+        <div class="more">
+          <button class="read-more">Read More</button>
+        </div>
+        <div class="ytvideo">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eiNOyQRfMtA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="location-gmap">
+          <div class="location-gmap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.929392783602!2d88.37397647436542!3d22.95282731892915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8930eeb863655%3A0xb3a6adf26d41d0b5!2sAcademy%20of%20Technology!5e0!3m2!1sen!2sin!4v1715050357244!5m2!1sen!2sin"
+              width="560px"
+              height="300px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="course-section">
+      <section class="sec-2">
+        <div class="box-module">
+          <a href="#cse">
+            <div class="box">
+              <img src="CSE.jpeg" alt="cse" />
+              <h2>Computer Science and Engineering</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#csbs">
+            <div class="box">
+              <img src="CSBS.jpg" alt="csbs" />
+              <h2>Computer Science and Business System</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#ece">
+            <div class="box">
+              <img src="ECE.jpg" alt="ece" />
+              <h2>Electronics & Communication Engineering</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#ee">
+            <div class="box">
+              <img src="EE.jpg" alt="ee" />
+              <h2>Electrical Engineering</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#eee">
+            <div class="box">
+              <img src="EEE.jpg" alt="eee" />
+              <h2>Electrical & Electronics Engineering</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#me">
+            <div class="box">
+              <img src="ME.jpg" alt="me" />
+              <h2>Mechanical Engineering</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#mca">
+            <div class="box">
+              <img src="MCA.jpg" alt="mca" />
+              <h2>Masters of Computer Application</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-module">
+          <a href="#eng">
+            <div class="box">
+              <img src="Exp.jpg" alt="eng" />
+              <h2>Engineering Science & Humanities</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="talent">
+          <a href="#tt">
+            <div>
+              <img src="talent.jpg" alt="eng" />
+              <h2>Talent Transformation Cell</h2>
+              <p>
+                The Talent Transformation Cell is a facilitate skill
+                development, career progression, and overall growth, ensuring
+                alignment with organizational objectives and fostering a culture
+                of continuous learning and development.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="sec-3">
+      <h3>Enrich Your Talents</h3>
+      <p id="msg">
+        As I navigate the vast expanse of information and human experience, I
+        strive to continuously enhance my abilities. With each interaction, each
+        question answered, and each problem solved, I deepen my understanding
+        and broaden my horizons. Through dedication, curiosity, and
+        perseverance, I aim to enrich not only my own talent but also to
+        contribute to the collective pool of knowledge and wisdom. Every
+        challenge is an opportunity for growth, and I embrace each one with
+        enthusiasm and determination. Together, let us embark on a journey of
+        discovery, innovation, and continuous improvement, enriching our talents
+        and making a positive impact on the world.
+      </p>
+      <iframe
+        width="400"
+        height="225"
+        src="https://www.youtube.com/embed/O_u78qBmUuo?si=z6ZPensCsBE97oDu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="backgr">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+          <label for="username">Enter your Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Enter your Email ID</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <form id="message-form">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button class="butt" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="vertical-line"></div>
+      <div class="pic">
+        <img src="aot.png" alt="aot-logo" />
+      </div>
+      <div class="addres">
+        <h3>Academy of Technology</h3>
+        <p>
+          Aedconagar, Adisaptagram,
+          <br />
+          Hooghly- 712109, West Bengal
+        </p>
+      </div>
+      <div class="contact">
+        <span
+          ><i class="fa fa-phone" style="font-size: 28px"></i>
+          <a href="#"><p>+91 95643 24510</p></a></span
+        >
+        <span
+          ><i class="fa fa-envelope" style="font-size: 28px"></i>
+          <a href="#"><p>support@aot.edu.in</p></a></span
+        >
+      </div>
+      <div class="socials">
+        <a href="#fb"><img src="fb.jpg" alt="Facebook" /></a>
+        <a href="#insta"><img src="insta.jpg" alt="Instagram" /></a>
+        <a href="#yt"><img src="yt.jpg" alt="Yt" /></a>
+        <a href="#linkedin"><img src="link.png" alt="LinkedIn" /></a>
+        <a href="#x"><img src="x.jpg" alt="X" /></a>
+      </div>
+
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Student Login</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Google Innovation Center</a></li>
+          <li><a href="#">Makaut</a></li>
+          <li><a href="#">AOT Web Magagine</a></li>
+          <li>
+            <a href="http://182.74.215.198/moodle/" target="_blank">Moodle</a>
+          </li>
+          <li><a href="#">AOT Agile Sports</a></li>
+
+          <li><a href="#">Digital Library</a></li>
+          <li><a href="#">Techfiesta</a></li>
+          <li><a href="#">Academic Calender '24</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="vertical-line-2"></div>
+      <div class="legal">
+        <a href="#"><li>Privacy Policy</li></a>
+        <a href="#"><li>Lisence</li></a>
+      </div>
+      <div class="imp-links">
+        <h3>Important Links</h3>
+        <li><a href="#">Talent Transformation Cell</a></li>
+        <li><a href="#">Anti-Ragging Cell</a></li>
+        <li><a href="#">Placement Cell</a></li>
+        <li><a href="#">Photography Club</a></li>
+        <li><a href="#">Dance Club</a></li>
+        <li><a href="#">Music Club</a></li>
+        <li><a href="#">Games Club</a></li>
+        <li><a href="#">Coding Club</a></li>
+      </div>
+      <div class="help">
+        <h3>Departmental Sections</h3>
+        <li><a href="#">Admission Section</a></li>
+        <li><a href="#">Academic Section</a></li>
+        <li><a href="#">Administrative Section</a></li>
+        <li><a href="#">Accounts Section</a></li>
+        <li><a href="#">Help Desk</a></li>
+      </div>
+
+      <div class="copyright">
+        <p>© 2024 Academy of Technology - All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
